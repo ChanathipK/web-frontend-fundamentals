@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.page-heading-div {
+    width: 100%;
+    min-width: 364px;
+    display: flex;
+    justify-content: center;
+}
+
+h1:first-child {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.heading-span {
+    font-weight: 600;
+}
+
+/* ========== Main ========== */
+
+main {
+    box-sizing: border-box;
+    padding: 0 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+@media (min-width: 576px) {
+    main {
+        width: 540px;
+    }
+
+    h1:first-child {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 720px;
+    }
+
+    h1:first-child {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    main {
+        width: 1320px;
+    }
+}
+
+main > hr:first-child {
+    border: 1px solid black;
+    border-radius: 1px;
+    margin: 0;
+}
