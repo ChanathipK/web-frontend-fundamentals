@@ -5,6 +5,14 @@ html, body {
     padding: 0;
 }
 
+body {
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .page-heading-div {
     width: 100%;
     min-width: 364px;
@@ -13,31 +21,139 @@ html, body {
 }
 
 h1:first-child {
-    font-family: "Noto Sans Thai", sans-serif;
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
     margin: 1rem 0;
+    user-select: none;
 }
 
 .heading-span {
     font-weight: 600;
 }
 
+/* ========== Navigation ========== */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav > * {
+    user-select: none;
+}
+
+nav > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+nav > div:not(:first-child) {
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    transition: 0.2s;
+    margin: 0 1rem;
+}
+
+.home-anchor {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+    padding: 0.25rem 0.5rem;
+}
+
+.home:hover {
+    background-color: rgba(30, 30, 30, 1);
+}
+
+.home-anchor:hover {
+    color: white;
+}
+
+.content {
+    position: relative;
+}
+
+.content-label {
+    display: inline-block;
+    width: 7rem;
+    padding: 0.25rem 0.5rem;
+    border-top-right-radius: 0.25rem;
+    transition: 0.2s;
+}
+
+.content-dropdown {
+    display: flex;
+    width: 7rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+    padding: 0 0.5rem;
+    position:absolute;
+    top: 2rem;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.2s;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.content:hover > .content-dropdown {
+    height: 7rem;
+    background-color: black;
+    color: white;
+}
+
+.content:hover > .content-label {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.content-dropdown > div:hover {
+    cursor: pointer;
+}
+
+
 /* ========== Main ========== */
 
 main {
-    box-sizing: border-box;
     padding: 0 1rem;
     width: 100%;
     margin: 0 auto;
+}
+
+.indent-8 {
+    text-indent: 2rem;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* ========== Footer ========== */
+
+footer {
+    width: 100%;
+    height: 20px;
 }
 
 
 
 
 @media (min-width: 576px) {
-    main {
+    main, nav {
         width: 540px;
     }
 
@@ -47,7 +163,7 @@ main {
 }
 
 @media (min-width: 768px) {
-    main {
+    main, nav {
         width: 720px;
     }
 
@@ -57,19 +173,19 @@ main {
 }
 
 @media (min-width: 992px) {
-    main {
+    main, nav {
         width: 960px;
     }
 }
 
 @media (min-width: 1200px) {
-    main {
+    main, nav {
         width: 1140px;
     }
 }
 
 @media (min-width: 1400px) {
-    main {
+    main, nav {
         width: 1320px;
     }
 }
