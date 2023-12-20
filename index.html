@@ -13,7 +13,7 @@
     <nav>
         <div>
             <div class="home">
-                <a target="_blank" class="home-anchor" href="https://chanathipk.github.io/web-frontend-fundamentals/">Home</a>
+                <a class="home-anchor" href="https://chanathipk.github.io/web-frontend-fundamentals/">Home</a>
             </div>
             <div class="content">
                 <div class="content-label">Contents</div>
@@ -39,13 +39,31 @@
     </div>
     <main>
         <hr />
-        <h2>Acknowledge</h2>
-        <p class="indent-8 text-justify">This website, created by Chanathip (me), is still in the early access. If you need to fully interact with this website, viewing it on desktop browser is recommended since there are lots of hovering needed to be done. I, the creator of this website, am not a native speaker, so if you find some weird English phrases or some grammatical errors, please let me know.</p>
-        <p class="indent-8 text-justify">I would like to put some lorem ipsome here just to make my website looks like it has a lot of content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat velit ullam omnis sed impedit voluptates aperiam sit! Soluta rem accusantium tempora recusandae saepe quis fugiat nulla eos. Aperiam libero suscipit dicta repellat iusto praesentium et delectus? Pariatur, deleniti rerum accusamus aliquid porro, praesentium doloremque illo ut maiores quod harum ea!</p>
-        <p class="indent-8 text-justify">This page is partially responsive, <span style="text-decoration: underline;">viewing this page on the device with viewport width larger than 400px is recommended.</span></p>
+        <h2>ยินดีต้อนรับ</h2>
+        <p class="indent-8 text-justify">ยินดีต้อนรับทุก ๆ ท่านที่เข้ามาเยี่ยมชมเว็บไซต์นี้นะครับ ผมสร้างเว็บไซต์นี้ขึ้นมาด้วยจุดประสงค์เพื่อที่จะช่วยเพื่อนของผมคนหนึ่งให้สามารถทำความเข้าใจเกี่ยวกับ HTML CSS และ JavaScript ได้ แต่ถ้ามันได้ช่วยผู้อื่นด้วย ผมก็ยินดีครับ และนั่นก็คือสาเหตุที่ผมสร้างเว็บไซต์นี้ขึ้นมาทั้งหมดด้วย HTML CSS และ JavaScript และเปิดให้ทุกคนสามารถเข้าถึง Source Code ของเว็บไซต์นี้ได้ (ผ่านทาง GitHub public repository ของผมเอง)</p>
+        <p class="indent-8 text-justify">การเรียนรู้พื้นฐานของทั้งสามภาษาผ่านเว็บไซต์นี้สามารถทำได้หลายวิธี คุณอาจจะเข้าเว็บไซต์นี้ผ่านเบราเซอร์และดูตัวอย่างการเขียนพร้อมคำอธิบายในแต่ละส่วน หรือจะใช้เครื่องมืออย่าง Developer's Tool (DevTools) เพื่อตรวจดูวิธีการเขียนที่ผมใช้และนำไปเป็นแนวทางการศึกษาต่อก็ได้ครับ</p>
+        <p class="indent-8 text-justify">ที่สำคัญเลยคือ Website นี้ถูกสร้างขึ้นมาให้มีความ Responsive คุณสามารถเข้ามายังเว็บไซต์นี้ผ่านอุปกรณ์ใด ๆ ก็ได้ที่ต้องการ แต่ผมอยากจะแนะนำว่า<span style="text-decoration: underline;">ถ้าหากเป็นได้ เว็บไซต์นี้ก็ควรจะถูกเข้าชมผ่านอุปกรณ์ที่มี viewport width มากกว่า 400px ครับ</span></p>
+        <h2>ตัวอย่างโค้ด</h2>
+        <p class="indent-8 text-justify">ตัวอย่างหลัก ๆ ในเว็บไซต์นี้จะถูกระบุไว้อย่างชัดเจน และสามารถกดปุ่มด้านขวาบนของกรอบตัวอย่างเพื่อคัดลอกตัวอย่างไปใช้งานได้ แต่หากใครต้องการจะดูตัวอย่างผ่าน Source Code ก็อาจจะพบว่า ตัวอย่างเหล่านี้ไม่ได้เขียนอยู่ในรูปแบบที่เว็บไซต์กำลังแสดงผล นั่นก็เพราะว่า เราไม่สามารถเขียนโค้ดจริง ๆ และให้มันแสดงผลดั่งตัวมันเองได้ (สรุปง่าย ๆ ก็คือ ตัวอย่างที่เห็นใช้งานได้จริง และสามารถคัดลอกไปใช้ได้จริง แต่ถ้าเข้าไปดูที่ Source Code ก็อาจจะเจอหน้าตาแปลก ๆ ต่างจากที่เห็นในเว็บไซต์ ไม่ต้องตกใจ)</p>
+        <code id="code-example" class="code-example">
+            &lt;<span class="code-blue">html</span>&gt;<br>
+            &nbsp;&nbsp;&lt;<span class="code-blue">head</span>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+            &nbsp;&nbsp;&lt;<span class="code-blue">/head</span>&gt;<br>
+            &nbsp;&nbsp;&lt;<span class="code-blue">body</span>&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;... <br>
+            &nbsp;&nbsp;&lt;<span class="code-blue">/body</span>&gt;<br>
+            &lt;<span class="code-blue">/html</span>&gt;<br>
+            <div onClick="copyCode('code-example')">   
+                <div>
+                    
+                </div>
+            </div>
+        </code>
     </main>
     <footer>
         
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>

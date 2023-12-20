@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html, body {
     margin: 0;
@@ -134,32 +134,6 @@ nav > div:not(:first-child) {
     cursor: pointer;
 }
 
-
-
-
-/* ========== Main ========== */
-
-main {
-    padding: 0 1rem;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.indent-8 {
-    text-indent: 2rem;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-/* ========== Footer ========== */
-
-footer {
-    width: 100%;
-    height: 20px;
-}
-
 .visit-me {
     display: flex;
     flex-direction: column;
@@ -209,6 +183,87 @@ footer {
 .visit-me:hover > .visit-dropdown > a {
     color: white;
 }
+
+
+/* ========== Main ========== */
+
+main {
+    padding: 0 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.indent-8 {
+    text-indent: 2rem;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.code-example {
+    font-size: 1.25rem;
+    display: inline-block;
+    width: 100%;
+    min-width: 320px;
+    overflow: auto;
+    margin: 1rem 0 2rem 0;
+    padding: 2rem;
+    border-radius: 0.25rem;
+    background-color: rgba(50, 50, 50, 1);
+    color: white;
+    position: relative;
+}
+
+.code-blue {
+    color: lightblue;
+}
+
+.code-example > div {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    border-radius: 0.25rem;
+    right: 1rem;
+    top: 1rem;
+    box-shadow: none;
+    border: none;
+    transition: 0.15s;
+    background-color: white;
+}
+
+.code-example > div:hover {
+    cursor: pointer;
+    background-color: rgba(200, 200, 200, 1);
+}
+
+.code-example > div:active {
+    background-color: rgba(150, 150, 150, 1);
+}
+
+.code-example > div > div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.code-example > div > div > label {
+    color: white;
+    position: absolute;
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+}
+
+/* ========== Footer ========== */
+
+footer {
+    width: 100%;
+    height: 20px;
+}
+
+
 
 
 @media (min-width: 576px) {
