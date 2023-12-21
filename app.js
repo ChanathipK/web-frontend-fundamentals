@@ -66,7 +66,7 @@ function calFilterDivSize() {
         fH.offsetHeight +
         fH2.offsetHeight
     );
-    document.getElementById("filter-div").style.height = (divHeight + 104) + "px";
+    document.getElementById("filter-div").style.height = (divHeight + 132) + "px";
 }
 
 window.onload = calFilterDivSize;
