@@ -193,6 +193,15 @@ main {
     margin: 0 auto;
 }
 
+main > hr:first-child {
+    border: 1px solid black;
+    border-radius: 1px;
+}
+
+main > hr {
+    margin: 0;
+}
+
 main p {
     font-size: 1.25rem;
 }
@@ -308,8 +317,3 @@ footer {
     }
 }
 
-main > hr:first-child {
-    border: 1px solid black;
-    border-radius: 1px;
-    margin: 0;
-}
