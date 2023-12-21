@@ -188,9 +188,13 @@ nav > div:not(:first-child) {
 /* ========== Main ========== */
 
 main {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     width: 100%;
     margin: 0 auto;
+}
+
+main p {
+    font-size: 1.25rem;
 }
 
 .indent-8 {
