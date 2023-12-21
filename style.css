@@ -7,6 +7,7 @@ html, body {
 
 body {
     font-family: "Noto Sans Thai", sans-serif;
+    position: relative;
 }
 
 * {
@@ -30,6 +31,28 @@ h1:first-child {
 
 .heading-span {
     font-weight: 600;
+}
+
+#filter-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 12rem;
+    background-color: rgba(100, 200, 150, 0.2);
+    /* clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 80%,
+        0 100%
+    ); */
+    backdrop-filter: invert(1);
+    z-index: 20;
+    pointer-events: none;
+}
+
+body > *:not(#filter-div) {
+    z-index: 10;
 }
 
 /* ========== Navigation ========== */
@@ -199,11 +222,15 @@ main > hr:first-child {
 }
 
 main > hr {
-    margin: 0;
+    margin: 0 0 2rem 0;
+}
+
+main h3 {
+    font-size: 1.25rem;
 }
 
 main p {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 }
 
 .indent-8 {

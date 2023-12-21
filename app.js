@@ -48,3 +48,26 @@ function copyCode(blockId) {
     }
     navigator.clipboard.writeText(actualCode);
 }
+
+function calFilterDivSize() {
+    let nav = document.getElementById("nav");
+    let headingDiv = document.getElementById("page-heading-div");
+    let fP = document.getElementById("main-first-p");
+    let sP = document.getElementById("main-second-p");
+    let tP = document.getElementById("main-third-p");
+    let fH = document.getElementById("main-first-hr");
+    let fH2 = document.getElementById("main-first-h2");
+    let divHeight = (
+        nav.offsetHeight +
+        headingDiv.offsetHeight +
+        fP.offsetHeight +
+        sP.offsetHeight +
+        tP.offsetHeight +
+        fH.offsetHeight +
+        fH2.offsetHeight
+    );
+    document.getElementById("filter-div").style.height = (divHeight + 104) + "px";
+}
+
+window.onload = calFilterDivSize;
+window.onresize = calFilterDivSize;
